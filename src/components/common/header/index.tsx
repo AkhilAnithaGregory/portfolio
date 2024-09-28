@@ -11,10 +11,10 @@ function Header() {
   const [darkMode, setDarkMode] = React.useState(false);
   const [isNavBarActive, setIsNavBarActive] = React.useState(false);
   return (
-    <div className="sm:my-5 bg-primary sm:rounded-xl flex justify-between items-center text-white p-4 xl:p-0">
+    <div className="mx-5 sm:mx-0 my-5 bg-primary rounded-xl flex justify-between items-center text-white p-4 xl:p-0 border border-darkSecondary">
       <button
         type="button"
-        aria-label="enable navbar"
+        aria-label="sidebar menu toggle"
         onClick={() => setIsNavBarActive(!isNavBarActive)}
         className="hidden xl:flex p-6 bg-[#ffffff0d] w-fit rounded-l-xl"
       >
@@ -51,25 +51,29 @@ function Header() {
         className="hidden xl:flex p-6 bg-[#ffffff0d] w-fit rounded-r-xl"
       >
         {darkMode ? (
-          <FaMoon size="20px" color="white" />
+          <FaMoon size="20px" color="#ffc107" />
         ) : (
-          <FaSun size="20px" color="white" />
+          <FaSun size="20px" color="#ffc107" />
         )}
       </button>
       <div className="flex xl:hidden items-center gap-5">
         <div>
           {darkMode ? (
-            <FaMoon size="20px" color="white" />
+            <FaMoon size="20px" color="#ffc107" />
           ) : (
-            <FaSun size="20px" color="white" />
+            <FaSun size="20px" color="#ffc107" />
           )}
         </div>
-        <div>
+        <button
+          type="button"
+          aria-label="sidebar menu toggle"
+          onClick={() => setIsNavBarActive(!isNavBarActive)}
+        >
           <RxHamburgerMenu size="20px" color="white" />
-        </div>
+        </button>
       </div>
       <div
-        className={`bg-[#1f1f24] ${isNavBarActive ? "block" : "hidden"} fixed top-0 left-0 bottom-0 sm:w-1/2 lg:w-1/4 shadow-md`}
+        className={`bg-[#1f1f24] ${isNavBarActive ? "block" : "hidden"} fixed top-0 left-0 bottom-0 sm:w-1/2 lg:w-1/4 shadow-md overflow-auto scrollbar-hide`}
       >
         <button
           type="button"
@@ -80,8 +84,21 @@ function Header() {
           <IoClose size="20px" />
         </button>
         <div className="mt-5 p-10">
+          <div className="block xl:hidden">
+            <h3 className="text-center text-3xl">Go Through</h3>
+            <hr className="border-t border-secondary w-full mx-auto my-4" />
+            <div className="mb-5">
+              <ul className="space-y-2 text-lightGray">
+                <li>About me</li>
+                <li>Resume</li>
+                <li>Technologies</li>
+                <li>Works</li>
+                <li>Contact me</li>
+              </ul>
+            </div>
+          </div>
           <h3 className="text-center text-3xl">Get in touch</h3>
-          <hr className="border-t border-secondary w-3/4 mx-auto my-4" />
+          <hr className="border-t border-secondary w-full mx-auto my-4" />
           <p className="text-lightGraySecondary my-5">
             I&apos;m always excited to take on new projects and collaborate with
             innovative minds.
