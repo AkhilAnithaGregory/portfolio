@@ -2,10 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
+import { DM_Mono } from "next/font/google";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaSun, FaMoon, FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+
+const dmMono500 = DM_Mono({ subsets: ["latin"], weight: "500" });
 
 function Header() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -30,7 +33,9 @@ function Header() {
         />
         Akhil.dev
       </div>
-      <ul className="hidden xl:flex gap-x-5 items-center">
+      <ul
+        className={`${dmMono500.className} hidden xl:flex gap-x-5 items-center`}
+      >
         <li>About me</li>
         <li>Resume</li>
         <li>Technologies</li>

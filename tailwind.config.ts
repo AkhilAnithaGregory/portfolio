@@ -32,6 +32,10 @@ const config = {
         teritery: "#1f1f24",
         lightGray: "#79797c",
         lightGraySecondary: "#bcbcbe",
+        clipPath: {
+          customPolygon:
+            "polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -81,7 +85,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwind-clip-path"), require("tailwindcss-animate")],
 } satisfies Config;
 
 export default config;

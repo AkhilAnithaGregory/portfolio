@@ -75,6 +75,11 @@
   }
 }
 
+.custom_polygon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  border-radius: 50px;
+}
+
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
