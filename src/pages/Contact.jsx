@@ -11,7 +11,7 @@ const Contact = () => {
     message: ''
   });
   
-  const [status, setStatus] = useState('idle'); // idle, loading, success, error
+  const [status, setStatus] = useState('idle'); 
   const [errors, setErrors] = useState({});
 
   const validate = () => {
@@ -31,7 +31,6 @@ const Contact = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // Clear error when user types
     if (errors[e.target.name]) {
       setErrors({ ...errors, [e.target.name]: '' });
     }
@@ -43,12 +42,10 @@ const Contact = () => {
     if (validate()) {
       setStatus('loading');
       
-      // Simulate API call
       setTimeout(() => {
         setStatus('success');
         setFormData({ firstName: '', lastName: '', mobile: '', email: '', message: '' });
         
-        // Reset status after a few seconds
         setTimeout(() => setStatus('idle'), 5000);
       }, 1500);
     }
@@ -86,7 +83,7 @@ const Contact = () => {
               backgroundColor: 'var(--card-bg)',
               border: '1px solid var(--card-border)',
               borderRadius: '1rem',
-              padding: '2.5rem',
+              padding: '1.5rem',
               display: 'flex',
               flexDirection: 'column',
               gap: '1.5rem',
@@ -231,7 +228,8 @@ const Contact = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              disabled={status === 'loading'}
+             /*  disabled={status === 'loading'} */
+              disabled={true}
               style={{
                 backgroundColor: 'var(--accent-color)',
                 color: 'white',
@@ -259,7 +257,8 @@ const Contact = () => {
                 <span>Sending...</span>
               ) : (
                 <>
-                  <span>Send Message</span>
+                 {/*  <span>Send Message</span> */}
+                  <span>Currently Unavailable</span>
                   <Send size={18} />
                 </>
               )}

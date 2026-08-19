@@ -11,35 +11,27 @@ import { useState } from 'react';
 const featuredProjects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.',
-    technologies: ['React.js', 'Node.js', 'MongoDB', 'Stripe'],
-    category: 'Full Stack',
-    url: 'https://example.com'
+    title: 'Matha Fresh Fish',
+    description: 'MathaFresh is a Kochi-based e-commerce platform that delivers fresh, hygienically prepared fish, poultry, and meat directly to customers homes through convenient online and mobile ordering.',
+    technologies: ['React.js', 'dotNet', 'MySQL', 'Razorpay'],
+    category: 'Frontend',
+    url: 'https://mathafresh.com/'
   },
   {
     id: 2,
-    title: 'Task Management Mobile App',
-    description: 'Cross-platform mobile application for productivity and task management with real-time sync.',
-    technologies: ['Flutter', 'Firebase', 'Provider'],
-    category: 'Mobile',
-    url: null
+     title: 'B|POS',
+    description: 'BPOS is a brand website showcasing its range of products, including self-service kiosks, thermal printers, and other POS hardware solutions.',
+    technologies: ['React.js', 'Node.js'],
+    category: 'Full Stack',
+    url: 'https://bpos.in/'
   },
   {
     id: 3,
-    title: 'Fintech Dashboard',
-    description: 'Financial dashboard with interactive charts, dark mode, and real-time data visualization.',
-    technologies: ['Vue.js', 'Tailwind CSS', 'Chart.js'],
+    title: 'Xenia CRM',
+    description: 'Xenia CRM helps businesses manage customer relationships, streamline sales processes, and drive growth through an intuitive and efficient platform.',
+    technologies: ['dotNet', 'HTML', 'MySQL'],
     category: 'Frontend',
-    url: 'https://example.com'
-  },
-  {
-    id: 4,
-    title: 'Portfolio Design System',
-    description: 'A comprehensive design system and component library built from scratch.',
-    technologies: ['Next.js', 'SCSS', 'Storybook'],
-    category: 'UI/UX',
-    url: 'https://example.com'
+    url: 'https://crm.xeniapos.com/'
   }
 ];
 

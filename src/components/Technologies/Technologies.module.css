@@ -67,6 +67,10 @@
   color: var(--text-primary);
 }
 
+.techImage{
+  width: 50px;
+}
+
 .techCard:hover .techIcon {
   transform: scale(1.1);
   color: var(--accent-color);

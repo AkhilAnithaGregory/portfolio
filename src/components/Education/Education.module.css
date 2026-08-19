@@ -120,6 +120,8 @@
 
 .year {
   display: flex;
+  width: fit-content;
+  margin-bottom: 0.5rem;
   align-items: center;
   gap: 0.25rem;
   font-size: 0.875rem;

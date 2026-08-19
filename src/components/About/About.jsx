@@ -5,7 +5,7 @@ import styles from './About.module.css';
 const stats = [
   { icon: <Briefcase size={24} />, title: '3+ Years Experience', description: 'Building professional apps' },
   { icon: <Code2 size={24} />, title: 'Web Development', description: 'React, Vue, Next.js' },
-  { icon: <Smartphone size={24} />, title: 'Mobile Development', description: 'Flutter cross-platform' },
+  { icon: <Smartphone size={24} />, title: 'Mobile Development', description: 'React Native, Flutter cross-platform' },
   { icon: <Terminal size={24} />, title: 'Problem Solving', description: 'Clean & scalable code' },
 ];
 

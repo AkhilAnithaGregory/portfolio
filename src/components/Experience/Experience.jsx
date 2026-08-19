@@ -6,31 +6,31 @@ import styles from './Experience.module.css';
 const experiences = [
   {
     id: 1,
-    company: 'TechCorp Solutions',
-    role: 'Frontend Developer',
-    period: '2024 - Present',
-    description: 'Leading frontend development for enterprise web applications using modern web technologies.',
+    company: 'Xenia Technologies',
+    role: 'Software Developer',
+    period: '2023 - 2025',
+    description: 'Contributing to the development of enterprise applications across frontend, backend, and mobile platforms, using modern technologies to build scalable and user-focused solutions.',
     responsibilities: [
-      'Developed scalable React.js and Next.js applications.',
+      'Developed responsive web applications and Android apps, ensuring fast performance and seamless user experience.',
       'Implemented complex UI components with a focus on accessibility.',
       'Collaborated with UX designers to translate wireframes into interactive prototypes.',
-      'Mentored junior developers and conducted code reviews.'
+      'Implemented state management using Zustand, React Query, and JS Cookies to optimize data flow and user sessions.'
     ],
-    technologies: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS']
+    technologies: ['Next.js', 'TypeScript', 'Node.js', 'Flutter', 'React Native', 'Android Development']
   },
   {
     id: 2,
-    company: 'Innovate Digital',
-    role: 'Software Engineer',
-    period: '2022 - 2024',
-    description: 'Full-stack development for client projects ranging from e-commerce to internal dashboards.',
+    company: 'Iantz IT Solutions',
+    role: 'Junior React Developer',
+    period: '2022 - 2023',
+    description: 'Mostly worked on building and maintaining web applications, focusing on user experience and performance optimization. Main projects are ERP solutions and websites for clients.',
     responsibilities: [
-      'Built cross-platform mobile applications using Flutter.',
-      'Developed RESTful APIs using Node.js and Express.',
-      'Optimized database queries and improved application performance by 40%.',
-      'Integrated third-party payment gateways and authentication services.'
+      'Built responsive and user-friendly web pages using modern front-end technologies.',
+      'Integrated RESTful APIs and handled data flow between backend and frontend.',
+      'Communicated with clients and team members to clarify tasks and deliver updates.',
+      'Gained experience with version control (Git/GitHub) and project workflows.',
     ],
-    technologies: ['Flutter', 'Node.js', 'Vue.js', 'MongoDB']
+    technologies: ['React.js', 'JavaScript', 'Tailwind CSS', 'SCSS', 'Bootstrap']
   }
 ];
 
