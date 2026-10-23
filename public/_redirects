@@ -1,1 +1,4 @@
 /*    /index.html   200
+
+/my-showcase       https://my-image-showcase.netlify.app/        200
+/my-showcase/*     https://my-image-showcase.netlify.app/:splat  200
